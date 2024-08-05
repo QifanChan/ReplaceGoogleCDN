@@ -1,0 +1,295 @@
+[
+  {
+    "id": 1,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "transform": {
+          "scheme": "https",
+          "host": "ajax.loli.net"
+        }
+      }
+    },
+    "condition": {
+      "urlFilter": "|http*://ajax.googleapis.com",
+      "requestDomains": ["ajax.googleapis.com"],
+      "resourceTypes": [
+        "main_frame",
+        "sub_frame",
+        "stylesheet",
+        "script",
+        "image",
+        "font",
+        "object",
+        "xmlhttprequest",
+        "ping",
+        "csp_report",
+        "media",
+        "websocket",
+
+        "other"
+      ]
+    }
+  },
+  {
+    "id": 2,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "transform": {
+          "scheme": "https",
+          "host": "fonts.googleapis.cn"
+        }
+      }
+    },
+    "condition": {
+      "urlFilter": "|http*://fonts.googleapis.com",
+      "requestDomains": ["fonts.googleapis.com"],
+      "resourceTypes": [
+        "main_frame",
+        "sub_frame",
+        "stylesheet",
+        "script",
+        "image",
+        "font",
+        "object",
+        "xmlhttprequest",
+        "ping",
+        "csp_report",
+        "media",
+        "websocket",
+
+        "other"
+      ]
+    }
+  },
+  {
+    "id": 3,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "transform": {
+          "scheme": "https",
+          "host": "themes.loli.net"
+        }
+      }
+    },
+    "condition": {
+      "urlFilter": "|http*://themes.googleusercontent.com",
+      "requestDomains": ["themes.googleusercontent.com"],
+      "resourceTypes": [
+        "main_frame",
+        "sub_frame",
+        "stylesheet",
+        "script",
+        "image",
+        "font",
+        "object",
+        "xmlhttprequest",
+        "ping",
+        "csp_report",
+        "media",
+        "websocket",
+
+        "other"
+      ]
+    }
+  },
+  {
+    "id": 4,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "transform": {
+          "scheme": "https",
+          "host": "fonts.gstatic.cn"
+        }
+      }
+    },
+    "condition": {
+      "urlFilter": "|http*://fonts.gstatic.com",
+      "requestDomains": ["fonts.gstatic.com"],
+      "resourceTypes": [
+        "main_frame",
+        "sub_frame",
+        "stylesheet",
+        "script",
+        "image",
+        "font",
+        "object",
+        "xmlhttprequest",
+        "ping",
+        "csp_report",
+        "media",
+        "websocket",
+
+        "other"
+      ]
+    }
+  },
+  {
+    "id": 5,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "transform": {
+          "scheme": "https",
+          "host": "gravatar.loli.net"
+        }
+      }
+    },
+    "condition": {
+      "urlFilter": "|http*://*.gravatar.com",
+      "requestDomains": [
+        "secure.gravatar.com",
+        "www.gravatar.com",
+        "cn.gravatar.com",
+        "en.gravatar.com"
+      ],
+      "resourceTypes": [
+        "main_frame",
+        "sub_frame",
+        "stylesheet",
+        "script",
+        "image",
+        "font",
+        "object",
+        "xmlhttprequest",
+        "ping",
+        "csp_report",
+        "media",
+        "websocket",
+
+        "other"
+      ]
+    }
+  },
+  {
+    "id": 6,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "regexSubstitution": "https://lib.baomitu.com/twitter-bootstrap/\\1/\\2"
+      }
+    },
+    "condition": {
+      "regexFilter": "^https?://maxcdn\\.bootstrapcdn\\.com/bootstrap/(\\d{1,4}\\.\\d{1,4}\\.\\d{1,4})/(.*?)",
+      "requestDomains": ["maxcdn.bootstrapcdn.com"],
+      "resourceTypes": [
+        "main_frame",
+        "sub_frame",
+        "stylesheet",
+        "script",
+        "image",
+        "font",
+        "object",
+        "xmlhttprequest",
+        "ping",
+        "csp_report",
+        "media",
+        "websocket",
+
+        "other"
+      ]
+    }
+  },
+  {
+    "id": 10,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "transform": {
+          "scheme": "https",
+          "host": "fastly.jsdelivr.net"
+        }
+      }
+    },
+    "condition": {
+      "urlFilter": "|http*://cdn.jsdelivr.net",
+      "requestDomains": ["cdn.jsdelivr.net"],
+      "resourceTypes": [
+        "main_frame",
+        "sub_frame",
+        "stylesheet",
+        "script",
+        "image",
+        "font",
+        "object",
+        "xmlhttprequest",
+        "ping",
+        "csp_report",
+        "media",
+        "websocket",
+
+        "other"
+      ]
+    }
+  },
+  {
+    "id": 7,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "regexSubstitution": "https://fastly.jsdelivr.net/npm/jquery@\\1/dist/jquery\\2"
+      }
+    },
+    "condition": {
+      "regexFilter": "^https?://code\\.jquery\\.com/jquery-(\\d{1,4}\\.\\d{1,4}\\.\\d{1,4})(.*?)",
+      "requestDomains": ["code.jquery.com"],
+      "resourceTypes": [
+        "main_frame",
+        "sub_frame",
+        "stylesheet",
+        "script",
+        "image",
+        "font",
+        "object",
+        "xmlhttprequest",
+        "ping",
+        "csp_report",
+        "media",
+        "websocket",
+
+        "other"
+      ]
+    }
+  },
+  {
+    "id": 8,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "regexSubstitution": "https://ajax.aspnetcdn.com/ajax/jquery.ui/\\1/\\2"
+      }
+    },
+    "condition": {
+      "regexFilter": "^https?://code\\.jquery\\.com/ui/(\\d{1,4}\\.\\d{1,4}\\.\\d{1,4})/(.*?)",
+      "requestDomains": ["code.jquery.com"],
+      "resourceTypes": [
+        "main_frame",
+        "sub_frame",
+        "stylesheet",
+        "script",
+        "image",
+        "font",
+        "object",
+        "xmlhttprequest",
+        "ping",
+        "csp_report",
+        "media",
+        "websocket",
+
+        "other"
+      ]
+    }
+  }
+]
